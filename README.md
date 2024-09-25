@@ -1,16 +1,9 @@
 # maintenance_tracker
 
-A new Flutter project.
+#### Technology
+- Flutter
+- Dart
+- Firebase
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Description
+Cross-platform mobile application for home mechanics and fleet managers to efficiently track vehicle maintenance and service history. Designed and implemented features to manage vehicle details, such as make, model, year, and mileage, allowing users to easily add, update, or remove vehicle information. History management system where users could log upgrades, repairs, and maintenance activities, ensuring comprehensive vehicle record-keeping. A scheduling system to notify users of upcoming maintenance based on mileage intervals, enhancing vehicle longevity through timely upkeep. Firebase for real-time data storage and data synchronization, ensuring scalability and security for multi-user environments.
