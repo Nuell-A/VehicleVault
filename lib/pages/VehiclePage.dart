@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maintenance_tracker/components/CardComponent.dart';
 import 'package:maintenance_tracker/database/Database.dart';
 import 'package:maintenance_tracker/models/Vehicle.dart';
+import 'package:maintenance_tracker/utils/Utilities.dart';
 
 
 class VehiclePage extends StatefulWidget {
@@ -37,7 +38,7 @@ class _VehiclePageState extends State<VehiclePage> {
     return CardComponent(
       title: vehicleData.vehicleName, 
       year: vehicleData.year, 
-      image: 'lib/assets/2023-nissan-frontier-pro-4x.jpg', 
+      image: Utilities().checkName(vehicleData.vehicleName), 
       description: vehicleData.description,
       showDescription: true,
       );

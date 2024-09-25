@@ -3,6 +3,7 @@ import 'package:maintenance_tracker/components/CardComponent.dart';
 import 'package:maintenance_tracker/database/Database.dart';
 import 'package:maintenance_tracker/models/Vehicle.dart';
 import 'package:maintenance_tracker/pages/MenuPage.dart';
+import 'package:maintenance_tracker/utils/Utilities.dart';
 
 
 class HomePage extends StatefulWidget {
@@ -124,7 +125,7 @@ class  HomePageState extends State<HomePage> {
                           child: CardComponent(
                             title: vehiclesDb[index].vehicleName,
                             year: vehiclesDb[index].year,
-                            image: 'lib/assets/2023-nissan-frontier-pro-4x.jpg',
+                            image: Utilities().checkName(vehiclesDb[index].vehicleName),
                             description: vehiclesDb[index].description,
                             showDescription: false,
                           ),

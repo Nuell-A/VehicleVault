@@ -38,7 +38,7 @@ class _MenuPageState extends State<MenuPage> {
       case TabItem.Vehicle:
         return VehiclePage(vehicelId);
       case TabItem.Schedule:
-        return SchedulePage();
+        return SchedulePage(vehicelId);
     }
 }
 

@@ -162,9 +162,11 @@ class _HistoryPageState extends State<HistoryPage> {
                     if (historyDb.isEmpty) {
                       return const Center(child: Text('No history added yet'));
                     }
+                    historyDb.sort((a, b) => b.date.compareTo(a.date));
                     // List of history records.
                     return ListView.builder(
                       itemCount: historyDb.length,
+                      reverse: false,
                       itemBuilder: (context, index) {
                         return HistoryComponent(
                           jobTitle: historyDb[index].jobTitle,

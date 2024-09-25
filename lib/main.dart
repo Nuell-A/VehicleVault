@@ -46,7 +46,7 @@ class _CustomHomeState extends State<CustomHome> {
           ),
         ),
       ),
-      body: HomePage(),
+      body: const HomePage(),
     );
   }
 }
